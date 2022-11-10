@@ -19,6 +19,16 @@ Author      : jthemes (https://themeforest.net/user/jthemes)
   background-color: #252c4a;
   position: relative;
   overflow: hidden;
+
+  animation-delay: 0s;
+  animation-duration: 10s;
+  animation-name: panoramic;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  margin: 0 auto;
+  will-change: background-position-x;
+  transition: background-position 5000ms ease-in-out;
 }
 
 .logo_area img {
@@ -234,7 +244,7 @@ button {
 
   .form_items label {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 1rem 2rem;
   }
 

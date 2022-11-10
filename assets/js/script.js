@@ -318,32 +318,52 @@ submitTrivia = () => {
 
   var resultMessage = '';
   var answers = document.querySelectorAll('.step input[type="radio"]:checked');
+  var tzCorrect = 0;
+  var tzWrong = 0;
   resultMessage += `<ul>`;
   for (i = 1; i < answers.length+1; i++) {
     
     var questionIndex = document.querySelector('.answers_'+i).getAttribute('question_index');
     var correctAnswer = Game.questions[questionIndex].answers[0];
     var selectedAnswer = document.querySelector('.answers_'+i+' input[type="radio"]:checked').value;
-  
+    
     if (correctAnswer == selectedAnswer) {
-      resultMessage += `<li>You got question ${i} correct</li>`;
+      tzCorrect++;
+      //resultMessage += `<li>${i} Correct</li>`;
     } else {
-      resultMessage += `<li>You got question ${i} wrong</li>`;
+      tzWrong++;
+      //resultMessage += `<li>${i} Wrong</li>`;
     }
   }
-  resultMessage += `</ul>`;
-  Swal.fire(
-    'Good job!',
-    resultMessage,
-    'success'
-  )
-  /*
-  var answerPage1 = document.querySelector('.answers_1 input[type="radio"]:checked');
-  var answerPage2 = document.querySelector('.answers_2 input[type="radio"]:checked');
-  var answerPage3 = document.querySelector('.answers_3 input[type="radio"]:checked');
-  var answerPage4 = document.querySelector('.answers_4 input[type="radio"]:checked');
-*/
 
+  resultMessage += `<li>You got ${tzCorrect} out of ${(tzCorrect+tzWrong)} Ccrrect</li>`;
+  resultMessage += `</ul>`;
+
+
+  Swal.fire({
+    title: 'Trivia Zap',
+    //generated logo from https://app.logo.com/editor/colors
+    html: resultMessage,
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'The best trivia game',
+    imageUrl: 'assets/images/logo/logo.png',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Start Over',
+    cancelButtonText: 'About',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      window.location.reload();
+    } else {
+      Swal.fire({
+        title: "<i>About</i>", 
+        html: "<a href='https://johnfacey.dev'>Trivia Zap</a>",  
+        confirmButtonText: "That's all!", 
+      });
+    }
+  })
 
 }
 
@@ -425,7 +445,8 @@ $( document ).ready(function() {
     } else {
   
     }
-  })
+  });
+  $(".step_1").removeClass("active");
 });
 
 
