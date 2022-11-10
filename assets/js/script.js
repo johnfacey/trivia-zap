@@ -427,9 +427,7 @@ $( document ).ready(function() {
   console.log( "ready!" );
   parseData(triviaData);
   Swal.fire({
-    title: 'Trivia Zap',
     //generated logo from https://app.logo.com/editor/colors
-    text: "Let's see what you know!",
     imageWidth: 400,
     imageHeight: 200,
     imageAlt: 'The best trivia game',
