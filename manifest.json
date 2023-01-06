@@ -1,4 +1,6 @@
 {
+
+  
   "background_color": "#030303",
   "description": "Quick Trivia Game",
   "dir": "ltr",
@@ -17,24 +19,24 @@
   ],
   "icons": [
     {
-      "src": "assets/images/icons/android-launchericon-48-48.png",
+      "src": "assets/images/icons/android/android-launchericon-48-48.png",
       "sizes": "48x48",
       "type": "image/webp"
     },
     {
-      "src": "assets/images/icons/android-launchericon-48-48.png",
+      "src": "assets/images/icons/android/android-launchericon-48-48.png",
       "sizes": "48x48"
     },
     {
-      "src": "assets/images/icons/android-launchericon-72-72.png",
+      "src": "assets/images/icons/android/android-launchericon-72-72.png",
       "sizes": "72x72"
     },
     {
-      "src": "assets/images/icons/android-launchericon-96-96.png",
+      "src": "assets/images/icons/android/android-launchericon-96-96.png",
       "sizes": "96x96"
     },
     {
-      "src": "assets/images/icons/192.png",
+      "src": "assets/images/icons/ios/192.png",
       "sizes": "192x192"
     },
     {
