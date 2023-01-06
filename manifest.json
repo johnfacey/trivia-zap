@@ -1,6 +1,4 @@
 {
-
-  
   "background_color": "#030303",
   "description": "Quick Trivia Game",
   "dir": "ltr",
@@ -18,6 +16,12 @@
     "assets/images/screens/screenshot1.jpg"
   ],
   "icons": [
+    {
+      "src": "assets/images/icons/triviazap.png",
+      "sizes": "122x122",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "assets/images/icons/android/android-launchericon-48-48.png",
       "sizes": "48x48",
