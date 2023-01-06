@@ -5,7 +5,7 @@
   "display": "fullscreen",
   "name": "Trivia Zap",
   "orientation": "any",
-  "scope": "/",
+  "scope": "https://johnfacey.github.io/trivia-zap/",
   "short_name": "TriviaZap",
   "start_url": "https://johnfacey.github.io/trivia-zap/",
   "theme_color": "#902599",
