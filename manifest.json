@@ -46,6 +46,10 @@
     {
       "src": "assets/images/icons/splash.png",
       "sizes": "any"
+    },
+    {
+      "src": "assets/images/icons/splash.png",
+      "sizes": "512*512"
     }
   ],
   "lang": "en"
