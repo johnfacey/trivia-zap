@@ -1,0 +1,19 @@
+{
+  "background_color": "#030303",
+  "description": "Quick Trivia Game",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "name": "Trivia Zap",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "TriviaZap",
+  "start_url": "https://johnfacey.github.io/trivia-zap/",
+  "theme_color": "#902599",
+  "categories": [
+    "games"
+  ],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": [],
+  "lang": "en"
+}
