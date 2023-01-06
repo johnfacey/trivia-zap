@@ -12,8 +12,35 @@
   "categories": [
     "games"
   ],
-  "screenshots": [],
-  "icons": [],
-  "shortcuts": [],
+  "screenshots": [
+    "assets/images/screens/screenshot1.jpg"
+  ],
+  "icons": [
+    {
+      "src": "assets/images/icons/android-launchericon-48-48.png",
+      "sizes": "48x48",
+      "type": "image/webp"
+    },
+    {
+      "src": "assets/images/icons/android-launchericon-48-48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/images/icons/android-launchericon-72-72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "assets/images/icons/android-launchericon-96-96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/images/icons/192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/images/icons/64.png",
+      "sizes": "any"
+    }
+  ],
   "lang": "en"
 }
